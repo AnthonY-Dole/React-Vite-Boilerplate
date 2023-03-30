@@ -1,16 +1,22 @@
 odule.exports = {
-  extends: ["eslint:recommended", "plugin:react/recommended", "plugin:import/recommended", "plugin:jsx-a11y/recommended", "plugin:@typescript-eslint/recommended", "eslint-config-prettier"],
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "eslint-config-prettier",
+  ],
   settings: {
     react: {
-      version: "detect"
+      version: "detect",
     },
     "import/resolver": {
       node: {
         paths: ["src"],
-        extensions: [".js", ".jsx", ".ts", ".tsx"]
-      }
-    }
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+    },
   },
-  rules: {}
+  rules: {},
 };
-export const extends = ["plugin:storybook/recommended"];
